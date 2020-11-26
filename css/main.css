@@ -1,0 +1,31 @@
+/*cricar variavel no css*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*coloca limite */
+}
+body{
+    background:var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+header .container{
+    
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'arial black',times;
+    font-size: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;/*margin a direita*/
+}
+header nav a:hover{
+    color: #FFF;
+}
