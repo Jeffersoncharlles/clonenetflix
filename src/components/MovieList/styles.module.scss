@@ -1,0 +1,15 @@
+.container {
+    margin-bottom: 2rem;
+
+    h2 {
+        margin: 0 0 0 2rem; //32 px left
+    }
+
+    &._content {
+        overflow-x: hidden; //tudo que passar da tela na horizontal vai ser cortado
+
+
+
+        &._list {}
+    }
+}
