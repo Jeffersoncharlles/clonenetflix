@@ -1,3 +1,15 @@
 .container {
     display: inline-block;
+    width: 10rem;
+
+    img {
+        width: 100%;
+        transform: scale(0.9); //vai ter 90%
+        transition: all ease-in .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1);
+        }
+    }
 }

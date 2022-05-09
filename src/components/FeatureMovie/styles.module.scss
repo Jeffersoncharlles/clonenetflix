@@ -1,0 +1,58 @@
+.container {
+    height: 100vh;
+
+
+
+    .feature {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to top, #111 10%, transparent 90%);
+
+        &_container {
+            width: inherit;
+            height: inherit;
+            background: linear-gradient(to right, #111, transparent);
+
+
+            &_info {
+
+
+                span {}
+
+                time {}
+
+                strong {}
+            }
+
+            p {}
+
+            &_genres {
+                strong {}
+
+                span {}
+            }
+
+            &_btn {}
+        }
+
+
+    }
+
+    // &::before {
+    //     content: "";
+    //     width: inherit;
+    //     height: inherit;
+    //     background: linear-gradient(to right, #111, transparent);
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     position: absolute;
+    // }
+
+    // &_horizontal {
+    //     width: inherit;
+    //     height: inherit;
+    //     background: linear-gradient(to right, #111, transparent);
+    // }
+}

@@ -5,11 +5,14 @@
         margin: 0 0 0 2rem; //32 px left
     }
 
-    &._content {
+    &_content {
         overflow-x: hidden; //tudo que passar da tela na horizontal vai ser cortado
+        padding-left: 2rem;
 
 
 
-        &._list {}
+        &_list {
+            width: 600rem;
+        }
     }
 }

@@ -64,5 +64,14 @@ export const Request = {
                 items: await basic(`discover/movie?with_genres=99&language=pt-BR&api_key=${key}`)
             },
         ]
+    },
+    InfoTvShow: async (id: number, type: string) => {
+        if (id && type) {
+            const { data } = await api.get(`${type}/${id}?language=pt-BR&api_key=${key}`)
+            if (data) {
+                return data
+            }
+        }
+
     }
 }
