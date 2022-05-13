@@ -1,38 +1,134 @@
 .container {
     height: 100vh;
 
-
-
     .feature {
         width: inherit;
         height: inherit;
         background: linear-gradient(to top, #111 10%, transparent 90%);
+
+
 
         &_container {
             width: inherit;
             height: inherit;
             background: linear-gradient(to right, #111, transparent);
 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+            padding-bottom: 150px;
+            padding-top: 60px;
+
+            h2 {
+                font-size: 4rem;
+                font-weight: bold;
+            }
+
 
             &_info {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-top: 1rem;
 
+                span,
+                time,
+                strong {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
 
-                span {}
+                span {
+                    color: #46d369;
+                }
 
-                time {}
-
-                strong {}
             }
 
-            p {}
+            p {
+                margin-top: 1rem;
+                font-size: 1.4rem;
+                color: #999;
+                max-width: 40%; //largura maxima e de 40%
+                line-height: 1.4;
+                // overflow: hidden;
+                // white-space: nowrap;
+                // text-overflow: ellipsis;
+            }
 
             &_genres {
+                font-size: 1.3rem;
+                color: #999;
+
                 strong {}
 
                 span {}
             }
 
-            &_btn {}
+            &_btn {
+                margin-top: 1rem;
+
+                &_play,
+                &_list {
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    border: 0;
+                    padding: .8rem 1.8rem;
+                    border-radius: .4rem;
+                    text-decoration: none;
+                    margin-right: .8rem;
+                    cursor: pointer;
+                    opacity: 1;
+                    transition: all ease-in .3s;
+                    margin-bottom: 1rem;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+
+                &_play {
+                    background: #fff;
+                    color: #111;
+                }
+
+                &_list {
+                    background: #333;
+                    color: #fff;
+                }
+            }
+
+            @media (max-width:768px) {
+
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                &_info {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: .8rem;
+                    max-width: 100%;
+                    margin-right: 30px;
+                    line-height: 1.1;
+                }
+
+                &_btn {
+
+                    &_play,
+                    &_list {
+                        font-size: 1rem;
+                    }
+                }
+
+                &_genres {
+                    font-size: .8rem;
+                }
+
+            }
         }
 
 
@@ -55,4 +151,11 @@
     //     height: inherit;
     //     background: linear-gradient(to right, #111, transparent);
     // }
+
+}
+
+@media (max-width:768px) {
+    .container {
+        height: 75vh;
+    }
 }

@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { IChosenFeatured, ITMDb } from './@types/ListHomeDTO';
 import { FeatureMovie } from './components/FeatureMovie';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { Loading } from './components/Loading';
 import { MovieList } from './components/MovieList';
 import { Request } from './services/Request';
 import styles from './styles.module.scss'
@@ -14,6 +17,7 @@ interface IRequest {
 export const App = () => {
   const [movies, setMovies] = useState<IRequest[]>([])
   const [featuredData, setFeaturedData] = useState<IChosenFeatured | null>(null)
+  const [blackHeader, setBlackHeader] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false)
 
@@ -26,6 +30,21 @@ export const App = () => {
       }
       setIsLoading(false)
     })()
+  }, [])
+
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 40) {
+        setBlackHeader(true)
+      } else {
+        setBlackHeader(false)
+      }
+    }
+    window.addEventListener('scroll', scrollListener)
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
   }, [])
 
   useEffect(() => {
@@ -44,6 +63,7 @@ export const App = () => {
 
   return (
     <main className={styles.container}>
+      <Header onBlack={blackHeader} />
 
       {!isLoading && featuredData && (
         <FeatureMovie item={featuredData} />
@@ -58,6 +78,8 @@ export const App = () => {
           </>
         )}
       </section>
+      <Footer />
+      {movies.length <= 0 && <Loading />}
     </main>
   );
 }

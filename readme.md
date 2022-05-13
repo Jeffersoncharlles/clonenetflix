@@ -10,30 +10,26 @@
   <a href="#construction_worker-how-to-use-developing">How to portfolio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#key-license">License</a>
 </p>
-<!-- <h1 align="center">
-  <img alt="BuyNow" title="#BuyNow" src="./screen/KJngtERxYV.png"/>
+<h1 align="center">
+  <img alt="Netflix" title="#Netflix" src="./Screenshots/Localhost2022-05-13at11.14.31AM.jpg"/>
 </h1>
 
 <!-- ## PREVIEW
-<a href="https://jeffersoncharlles.github.io/buynow_front_olx_api/">BuyNow</a> --> -->
+<a href="https://jeffersoncharlles.github.io/buynow_front_olx_api/">BuyNow</a> -->
 
 
 ### Premium Partners
 
-<!-- - Vite
+Vite
 - Typescript
-- axios
-- js-cookie
-- react-router-dom v6
-- react-slideshow-image
-- react-text-mask
-- styled-components
-- text-mask-addons
-- yup -->
+- Sass
+- Axios
+- React-Icons
 
 <div align='center'>
   Made with 💚  by <strong>Jefferson Charlles</strong> 🔥
   <a href='https://www.linkedin.com/in/jeffersoncharlles/'>Get in touch!</a>
 </div>
+
 ## License
 
