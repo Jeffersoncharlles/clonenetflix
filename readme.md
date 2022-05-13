@@ -14,8 +14,8 @@
   <img alt="Netflix" title="#Netflix" src="./Screenshots/Localhost2022-05-13at11.14.31AM.jpg"/>
 </h1>
 
-<!-- ## PREVIEW
-<a href="https://jeffersoncharlles.github.io/buynow_front_olx_api/">BuyNow</a> -->
+## PREVIEW
+# <a href="https://clonenetflix-chi.vercel.app/">PREVIEW-ONLINE</a>
 
 
 ### Premium Partners
